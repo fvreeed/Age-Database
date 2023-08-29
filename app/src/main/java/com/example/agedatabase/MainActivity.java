@@ -1,6 +1,7 @@
 package com.example.agedatabase;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -78,6 +79,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if (id == R.id.nav_insert) {
+            Log.i("TAG", "I'M AT MAINACTIVITY");
             InsertFragment fragment = new InsertFragment();
             transaction.replace(R.id.fragmentHolder, fragment);
         }
